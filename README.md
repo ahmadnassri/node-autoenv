@@ -1,5 +1,7 @@
 # autoenv [![version][npm-version]][npm-url] [![License][license-image]][license-url]
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ahmadnassri/autoenv.svg)](https://greenkeeper.io/)
+
 <img src="https://raw.githubusercontent.com/motdotla/dotenv/master/dotenv.png" alt="dotenv" align="right" />
 
 > `autoenv` uses [`dotenv`][dotenv] to **automatically** load environment variables from a [compatible](#config) `.env` file into [`process.env`][process-env].
