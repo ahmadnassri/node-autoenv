@@ -81,7 +81,7 @@ db.connect({
 ```
 
 ---
-> :copyright: [www.ahmadnassri.com](https://www.ahmadnassri.com/)  · 
+> :copyright: [ahmadnassri.com](https://www.ahmadnassri.com/)  · 
 > License: [ISC][license-url]  · 
 > Github: [@ahmadnassri](https://github.com/ahmadnassri)  · 
 > Twitter: [@ahmadnassri](https://twitter.com/ahmadnassri)
