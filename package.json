@@ -1,0 +1,39 @@
+{
+  "version": "0.0.0-development",
+  "name": "autoenv",
+  "description": "Loads environment variables from named .env files",
+  "author": "Ahmad Nassri <ahmad@ahmadnassri.com> (https://www.ahmadnassri.com/)",
+  "homepage": "https://github.com/ahmadnassri/autoenv",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahmadnassri/autoenv.git"
+  },
+  "license": "ISC",
+  "main": "index.js",
+  "keywords": [
+    "autoenv",
+    "dotenv",
+    "env",
+    ".env",
+    "environment",
+    "variables",
+    "config",
+    "settings"
+  ],
+  "engines": {
+    "node": ">=4"
+  },
+  "files": [
+    "index.js"
+  ],
+  "bugs": {
+    "url": "https://github.com/ahmadnassri/autoenv/issues"
+  },
+  "scripts": {
+    "test": "tap test.js",
+    "coverage": "npm run test -- --reporter silent --coverage"
+  },
+  "devDependencies": {
+    "tap": "^10.2.0"
+  }
+}
