@@ -5,6 +5,9 @@ node_js:
  - 6
  - 4
 
+env:
+  - NODE_ENV=test
+
 matrix:
   fast_finish: true
 
