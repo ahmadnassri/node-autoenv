@@ -6,7 +6,18 @@ engines:
     enabled: true
     config:
       languages:
-      - javascript
+      - javascript:
 
   eslint:
     enabled: true
+
+  nodesecurity:
+    enabled: true
+
+  markdownlint:
+    enabled: true
+
+ratings:
+   paths:
+   - "**.js"
+   - "**.md"
