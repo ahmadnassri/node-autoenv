@@ -34,7 +34,7 @@
     "coverage": "npm run test -- --reporter silent --coverage"
   },
   "devDependencies": {
-    "tap": "^10.2.0"
+    "tap": "^11.0.0"
   },
   "dependencies": {
     "dotenv": "^4.0.0"
