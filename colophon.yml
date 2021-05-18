@@ -1,0 +1,8 @@
+version: 2.0
+
+id: autoenv
+
+about:
+  title: AutoENV
+  description: automatically load dotenv files based on `NODE_ENV`
+  repository: ahmadnassri/node-autoenv
