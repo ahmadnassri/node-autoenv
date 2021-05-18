@@ -1,7 +1,4 @@
-
-<img src="https://raw.githubusercontent.com/motdotla/dotenv/master/dotenv.png" alt="dotenv" align="right" />
-
-> `autoenv` uses [`dotenv`][dotenv] to **automatically** load environment variables from a [compatible](#config) `.env` file into [`process.env`][process-env].
+`autoenv` uses [`dotenv`][dotenv] to **automatically** load environment variables from a [compatible](#config) `.env` file into [`process.env`][process-env].
 
 ## Install
 
@@ -13,7 +10,7 @@ npm install --only=production --save autoenv
 
 Create a default `.env` file in the root directory of your project.
 
-```dosini
+```ini
 DB_HOST=localhost
 DB_USER=root
 DB_PASS=s1mpl3
@@ -21,7 +18,7 @@ DB_PASS=s1mpl3
 
 Create additional `.env.xyz` files matching as many environment variants you want:
 
-```
+```plain
 my_project/
 ├── .env
 ├── .env.development
@@ -35,7 +32,7 @@ The **default** `.env` will always be loaded, if a matching `.env.${NODE_ENV}` f
 
 As early as possible in your application, require and configure dotenv.
 
-```javascript
+```js
 require('autoenv')
 ```
 
@@ -54,7 +51,6 @@ $ node index.js
 
 You can use the `--require` (`-r`) command line option to preload autoenv. By doing this, you do not need to `require` in your application code.
 
-
 ```bash
 $ node -r autoenv index.js
 ```
@@ -63,7 +59,7 @@ That's it.
 
 `process.env` now has the keys and values you defined in your `.env` file.
 
-```javascript
+```js
 const db = require('db')
 db.connect({
   host: process.env.DB_HOST,

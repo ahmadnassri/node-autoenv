@@ -8,9 +8,7 @@ automatically load dotenv files based on `NODE_ENV`
 [![test][test-img]][test-url]
 [![semantic][semantic-img]][semantic-url]
 
-<img src="https://raw.githubusercontent.com/motdotla/dotenv/master/dotenv.png" alt="dotenv" align="right" />
-
-> `autoenv` uses [`dotenv`][] to **automatically** load environment variables from a [compatible][] `.env` file into [`process.env`][].
+`autoenv` uses [`dotenv`][] to **automatically** load environment variables from a [compatible][] `.env` file into [`process.env`][].
 
 ## Install
 
@@ -22,7 +20,7 @@ npm install --only=production --save autoenv
 
 Create a default `.env` file in the root directory of your project.
 
-``` dosini
+``` ini
 DB_HOST=localhost
 DB_USER=root
 DB_PASS=s1mpl3
@@ -30,11 +28,13 @@ DB_PASS=s1mpl3
 
 Create additional `.env.xyz` files matching as many environment variants you want:
 
-    my_project/
-    ├── .env
-    ├── .env.development
-    ├── .env.staging
-    └── .env.production
+``` plain
+my_project/
+├── .env
+├── .env.development
+├── .env.staging
+└── .env.production
+```
 
 The **default** `.env` will always be loaded, if a matching `.env.${NODE_ENV}` file is present, it will be loaded and overrides the values in `.env`
 
@@ -42,7 +42,7 @@ The **default** `.env` will always be loaded, if a matching `.env.${NODE_ENV}` f
 
 As early as possible in your application, require and configure dotenv.
 
-``` javascript
+``` js
 require('autoenv')
 ```
 
@@ -69,7 +69,7 @@ That's it.
 
 `process.env` now has the keys and values you defined in your `.env` file.
 
-``` javascript
+``` js
 const db = require('db')
 db.connect({
   host: process.env.DB_HOST,
