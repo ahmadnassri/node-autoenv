@@ -43,7 +43,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: github/super-linter/slim@v4
+      - uses: github/super-linter/slim@v4.8.1
         env:
           LOG_LEVEL: ERROR
           VALIDATE_JSCPD: 'false'
