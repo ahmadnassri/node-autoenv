@@ -3,7 +3,7 @@
 ## Install
 
 ```bash
-npm install --only=production --save autoenv
+npm install autoenv
 ```
 
 ## Config
@@ -39,12 +39,12 @@ require('autoenv')
 When starting your application, ensure `NODE_ENV` is set to the environment name you wish to load.
 
 ```bash
-$ NODE_ENV=staging node index.js
+NODE_ENV=staging node index.js
 ```
 
 ```bash
-$ export NODE_ENV=staging
-$ node index.js
+export NODE_ENV=staging
+node index.js
 ```
 
 ### Preload
@@ -52,7 +52,7 @@ $ node index.js
 You can use the `--require` (`-r`) command line option to preload autoenv. By doing this, you do not need to `require` in your application code.
 
 ```bash
-$ node -r autoenv index.js
+node -r autoenv index.js
 ```
 
 That's it.
