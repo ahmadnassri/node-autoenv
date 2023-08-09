@@ -31,8 +31,7 @@
       }
     }],
     ["@semantic-release/github", {
-      "successComment": false,
-      "failComment": false
+      "successComment": false
     }],
     "@semantic-release/npm"
   ]
