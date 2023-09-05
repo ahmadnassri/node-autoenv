@@ -1,6 +1,6 @@
 {
-  "include": [
-    { "id": "NPM", "registry": "https://registry.npmjs.org", "name": "autoenv" },
-    { "id": "GITHUB", "registry": "https://npm.pkg.github.com", "name": "@ahmadnassri/autoenv" }
+  "registry": [
+    { "id": "NPM", "url": "https://registry.npmjs.org", "name": "autoenv" },
+    { "id": "GITHUB", "url": "https://npm.pkg.github.com", "name": "@ahmadnassri/autoenv" }
   ]
 }
