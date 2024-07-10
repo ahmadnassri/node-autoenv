@@ -27,7 +27,7 @@
     "settings"
   ],
   "engines": {
-    "node": ">=12"
+    "node": ">=20"
   },
   "files": [
     "index.js",
