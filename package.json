@@ -42,5 +42,8 @@
   },
   "dependencies": {
     "dotenv": "^16.0.1"
+  },
+  "devDependencies": {
+    "node-test-github-reporter": "^1.2.0"
   }
 }
