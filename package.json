@@ -41,7 +41,7 @@
     "test:ci": "npm run test:cli -- --test-reporter node-test-github-reporter test"
   },
   "dependencies": {
-    "dotenv": "^16.0.1"
+    "dotenv": "^17.1.0"
   },
   "devDependencies": {
     "node-test-github-reporter": "^1.2.0"
